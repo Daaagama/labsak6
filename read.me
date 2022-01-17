@@ -26,3 +26,5 @@ export ARCH=arm
 export KDIR=HOME/repos/linux-stable
 export KDIR=HOME/repos/linux-stable
 export KDIR=$HOME/repos/linux-stable
+-----------------------------------------------
+find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz 
