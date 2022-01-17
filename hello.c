@@ -6,7 +6,7 @@
 #include <linux/slab.h>
 #include <asm-generic/bug.h>
 
-MODULE_AUTHOR("Andrii Sliusarenko<assliusarnko@gmail.com>");
+MODULE_AUTHOR("Taras Samoilenko <daaagama@gmail.com>");
 MODULE_DESCRIPTION("Lab 6");
 MODULE_LICENSE("Dual BSD/GPL");
 
