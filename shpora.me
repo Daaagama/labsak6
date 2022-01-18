@@ -29,3 +29,5 @@ find . | cpio -o -H newc | gzip > ../rootfs.cpio.gz
 ${CROSS_COMPILE}objdump -dS  hello.ko.unstripped | less
 ${CROSS_COMPILE}gdb -q hello.o 
 disas hello_init+0x90, hello_init+0xa8+4
+qemu-system-arm -kernel _install/boot/zImage -initrd rootfs.cpio.gz  -machine virt -nographic -m 512 --append "root=/dev/ram0 rw console=ttyAMA0,115200 mem=512M"
+
